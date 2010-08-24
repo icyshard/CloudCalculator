@@ -1,0 +1,113 @@
+
+#slider {
+    width: 200px; 
+	margin-left: 8px;
+}
+
+#slider_label {
+    position: relative;
+    top: -18px;
+}
+
+body {
+    background: none;
+}
+
+#left-column {
+    float: left;
+    width: 600px;
+    overflow: hidden;
+	margin-left: 40px;
+}
+
+#right-column {
+    float: left;
+    margin-left: 20px;
+    width: 300px;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+	clear: left;
+}
+
+h3 {
+    font-size: 1.3em;
+    clear: left;
+    margin-top: 15px;
+}
+
+label {
+    float: left;
+    width: 100px;
+    clear: left;
+}
+
+input {
+    float: left;
+    margin-left: 15px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+input.numeric {
+    text-align: right;
+}
+.usage-input {
+    width: 600px;
+    clear: left;
+}
+
+.usage-input p {
+    float: left;
+    width: 260px;
+    font-size: 1.0em;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#slider {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+input.report_input {
+    border: 0; 
+    color: red; 
+    font-weight: bold;
+    display: inline;
+    width: 60px;
+}
+
+.report {
+	float: left;
+	width: 500px;
+	margin-left: 15px;
+}
+
+.report p {
+	float: left;
+	margin: 0 0 10px 0;
+}
+
+.report p.label {
+	margin-right: 10px;
+	clear: left;
+}
+
+.report span {
+	color: red;
+	font-weight: bold;
+}
+
+.report h3 {
+	background: #e3e3e3;
+}
+
+.override {
+    color: orange;
+    font-weight: bold;
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Row>
+		<assumption>Up front server cost</assumption>
+		<units>$ per compute unit</units>
+		<on_site>363</on_site>
+	</Row>
+	<Row>
+		<assumption>Server usable life</assumption>
+		<units>Years</units>
+		<on_site>3</on_site>
+	</Row>
+	<Row>
+		<assumption>Virtualization utilization ratio</assumption>
+		<units>Servers:Virtualized servers</units>
+		<on_site>1</on_site>
+	</Row>
+	<Row>
+		<assumption>Network cost per server</assumption>
+		<units>$</units>
+		<on_site>72</on_site>
+	</Row>
+	<Row>
+		<assumption>Network usable life</assumption>
+		<units>Years</units>
+		<on_site>3</on_site>
+	</Row>
+	<Row>
+		<assumption>Datacenter cost per kW</assumption>
+		<units>$</units>
+		<on_site>23000</on_site>
+	</Row>
+	<Row>
+		<assumption>Datacenter usable life</assumption>
+		<units>Years</units>
+		<on_site>15</on_site>
+	</Row>
+	<Row>
+		<assumption>Up front data storage</assumption>
+		<units>$ per GB </units>
+		<on_site>3</on_site>
+	</Row>
+	<Row>
+		<assumption>Maintenance Cost</assumption>
+		<units>% of hardware</units>
+		<on_site>0.1</on_site>
+	</Row>
+	<Row>
+		<assumption>Inbound cost per GB</assumption>
+		<units>$ per GB</units>
+		<on_site>0.12</on_site>
+	</Row>
+	<Row>
+		<assumption>Outbound cost per GB</assumption>
+		<units>$ per GB</units>
+		<on_site>0.12</on_site>
+	</Row>
+	<Row>
+		<assumption>Cost per kWH</assumption>
+		<units>$</units>
+		<on_site>0.09</on_site>
+	</Row>
+	<Row>
+		<assumption>kWH per compute unit hour</assumption>
+		<units>kWH</units>
+		<on_site>0.1</on_site>
+	</Row>
+	<Row>
+		<assumption>PUE Rating</assumption>
+		<units>units</units>
+		<on_site>2.5</on_site>
+	</Row>
+	<Row>
+		<assumption>Cloud management up front cost</assumption>
+		<units>$</units>
+		<on_site>0</on_site>		
+	</Row>
+</Root>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Row>
+		<hypervisor>None</hypervisor>
+		<timescale>Up-front</timescale>
+		<on_site>0</on_site>
+		<amazon>0</amazon>
+		<rackspace>0</rackspace>
+		<go_grid>0</go_grid>
+	</Row>
+	<Row>
+		<hypervisor>Vsphere Free</hypervisor>
+		<timescale>Up-front</timescale>
+		<on_site>0</on_site>
+		<amazon>0</amazon>
+		<rackspace>0</rackspace>
+		<go_grid>0</go_grid>
+	</Row>
+	<Row>
+		<hypervisor>Vsphere Essentials</hypervisor>
+		<timescale>Up-front</timescale>
+		<on_site>495</on_site>
+		<amazon>0</amazon>
+		<rackspace>0</rackspace>
+		<go_grid>0</go_grid>
+	</Row>
+	<Row>
+		<hypervisor>Vsphere Standard</hypervisor>
+		<timescale>Up-front</timescale>
+		<on_site>995</on_site>
+		<amazon>0</amazon>
+		<rackspace>0</rackspace>
+		<go_grid>0</go_grid>
+	</Row>
+	<Row>
+		<hypervisor>Citrix Xen Free</hypervisor>
+		<timescale>Up-front</timescale>
+		<on_site>0</on_site>
+		<amazon>0</amazon>
+		<rackspace>0</rackspace>
+		<go_grid>0</go_grid>
+	</Row>
+	<Row>
+		<hypervisor>Citrix Xen Advanced</hypervisor>
+		<timescale>Up-front</timescale>
+		<on_site>1000</on_site>
+		<amazon>0</amazon>
+		<rackspace>0</rackspace>
+		<go_grid>0</go_grid>
+	</Row>
+	<Row>
+		<hypervisor>MS Hyper V</hypervisor>
+		<timescale>Up-front</timescale>
+		<on_site>0</on_site>
+		<amazon>0</amazon>
+		<rackspace>0</rackspace>
+		<go_grid>0</go_grid>
+	</Row>
+	<Row>
+		<hypervisor>Xen</hypervisor>
+		<timescale>Up-front</timescale>
+		<on_site>0</on_site>
+		<amazon>0</amazon>
+		<rackspace>0</rackspace>
+		<go_grid>0</go_grid>
+	</Row>
+	<Row>
+		<hypervisor>KVM</hypervisor>
+		<timescale>Up-front</timescale>
+		<on_site>0</on_site>
+		<amazon>0</amazon>
+		<rackspace>0</rackspace>
+		<go_grid>0</go_grid>
+	</Row>
+	<Row>
+		<hypervisor>Other</hypervisor>
+		<timescale>Up-front</timescale>
+		<on_site>0</on_site>
+		<amazon>0</amazon>
+		<rackspace>0</rackspace>
+		<go_grid>0</go_grid>
+	</Row>
+</Root>

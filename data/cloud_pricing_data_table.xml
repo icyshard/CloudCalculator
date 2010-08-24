@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Row>
+		<assumption>Hourly reserved server cost</assumption>
+		<units>$ per compute unit</units>
+		<amazon>0.056</amazon>
+		<rackspace>0.12</rackspace>
+		<go_grid>0.07</go_grid>
+	</Row>
+	<Row>
+		<assumption>Hourly on-demand server cost</assumption>
+		<units>$ per compute unit</units>
+		<amazon>0.085</amazon>
+		<rackspace>0.12</rackspace>
+		<go_grid>0.14</go_grid>
+	</Row>
+	<Row>
+		<assumption>Virtualization utilization ratio</assumption>
+		<units>Servers:Virtualized servers</units>
+		<amazon>1</amazon>
+		<rackspace>1</rackspace>
+		<go_grid>1</go_grid>		
+	</Row>
+	<Row>
+		<assumption>Cloud management up front cost</assumption>
+		<units>$</units>
+		<amazon>2500</amazon>
+		<rackspace>2500</rackspace>
+		<go_grid>2500</go_grid>		
+	</Row>
+	<Row>
+		<assumption>Monthly data storage cost</assumption>
+		<units>$ per GB per month</units>
+		<amazon>0.1</amazon>
+		<rackspace>0.15</rackspace>
+		<go_grid>0.15</go_grid>
+	</Row>
+	<Row>
+		<assumption>Monthly mountable storage cost</assumption>
+		<units>$ per GB per month</units>
+		<amazon>0.1</amazon>
+		<rackspace>0.15</rackspace>
+		<go_grid>0.15</go_grid>
+	</Row>
+	<Row>
+		<assumption>Inbound cost per GB</assumption>
+		<units>$ per GB</units>
+		<amazon>0.1</amazon>
+		<rackspace>0.08</rackspace>
+		<go_grid>0</go_grid>
+	</Row>
+	<Row>
+		<assumption>Outbound cost per GB</assumption>
+		<units>$ per GB</units>
+		<amazon>0.15</amazon>
+		<rackspace>0.22</rackspace>
+		<go_grid>0.29</go_grid>
+	</Row>
+</Root>

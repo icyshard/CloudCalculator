@@ -1,0 +1,170 @@
+{
+    "compute_hour": {
+	"fedora": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"suse": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"ubuntu": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"centos": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"debian": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"gentoo": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"other_linux": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"redhat_enterprise": {
+	    "on_site": 0,
+	    "amazon": 0.03,
+	    "rackspace": 0.03,
+	    "go_grid": 0
+	},
+	"windows_server": {
+	    "on_site": 0,
+	    "amazon": 0.035,
+	    "rackspace": 0.03,
+	    "go_grid": 0
+	}
+    },
+    "annual": {
+	"fedora": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"suse": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"ubuntu": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"centos": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"debian": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"gentoo": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"other_linux": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"redhat_enterprise": {
+	    "on_site": 349,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"windows_server": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	}
+    },
+    "up_front": {
+	"fedora": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"suse": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"ubuntu": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"centos": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"debian": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"gentoo": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"other_linux": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"redhat_enterprise": {
+	    "on_site": 0,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	},
+	"windows_server": {
+	    "on_site": 2999,
+	    "amazon": 0,
+	    "rackspace": 0,
+	    "go_grid": 0
+	}
+    }
+}

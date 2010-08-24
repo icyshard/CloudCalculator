@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Row>
+		<Uses>Content Delivery</Uses>
+		<Compute_Units>4</Compute_Units>
+		<Data_Storage>1000</Data_Storage>
+		<Mountable_Data_Storage>200</Mountable_Data_Storage>
+		<Bandwidth_Inbound>10</Bandwidth_Inbound>
+		<Bandwidth_Outbound>5000</Bandwidth_Outbound>
+		<Load_Balancers>0</Load_Balancers>
+	</Row>
+	<Row>
+		<Uses>Web Application</Uses>
+		<Compute_Units>36</Compute_Units>
+		<Data_Storage>7000</Data_Storage>
+		<Mountable_Data_Storage>1200</Mountable_Data_Storage>
+		<Bandwidth_Inbound>100</Bandwidth_Inbound>
+		<Bandwidth_Outbound>2030</Bandwidth_Outbound>
+		<Load_Balancers>2</Load_Balancers>
+	</Row>
+	<Row>
+		<Uses>Web Server</Uses>
+		<Compute_Units>8</Compute_Units>
+		<Data_Storage>2300</Data_Storage>
+		<Mountable_Data_Storage>100</Mountable_Data_Storage>
+		<Bandwidth_Inbound>30</Bandwidth_Inbound>
+		<Bandwidth_Outbound>230</Bandwidth_Outbound>
+		<Load_Balancers>2</Load_Balancers>
+	</Row>
+	<Row>
+		<Uses>Collaboration Server</Uses>
+		<Compute_Units>6</Compute_Units>
+		<Data_Storage>200</Data_Storage>
+		<Mountable_Data_Storage>100</Mountable_Data_Storage>
+		<Bandwidth_Inbound>75</Bandwidth_Inbound>
+		<Bandwidth_Outbound>150</Bandwidth_Outbound>
+		<Load_Balancers>2</Load_Balancers>
+	</Row>
+	<Row>
+		<Uses>Dev Test</Uses>
+		<Compute_Units>6</Compute_Units>
+		<Data_Storage>200</Data_Storage>
+		<Mountable_Data_Storage>0</Mountable_Data_Storage>
+		<Bandwidth_Inbound>375</Bandwidth_Inbound>
+		<Bandwidth_Outbound>750</Bandwidth_Outbound>
+		<Load_Balancers>0</Load_Balancers>
+	</Row>
+	<Row>
+		<Uses>Grid Computing</Uses>
+		<Compute_Units>400</Compute_Units>
+		<Data_Storage>3000</Data_Storage>
+		<Mountable_Data_Storage>0</Mountable_Data_Storage>
+		<Bandwidth_Inbound>1000</Bandwidth_Inbound>
+		<Bandwidth_Outbound>200</Bandwidth_Outbound>
+		<Load_Balancers>0</Load_Balancers>
+	</Row>
+</Root>

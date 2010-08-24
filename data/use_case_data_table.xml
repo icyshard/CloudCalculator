@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Row>
+		<use_cases>Constant Load</use_cases>
+		<average_peak_utilization>0.6</average_peak_utilization>
+		<average_base_utilization>0.3</average_base_utilization>
+		<peak_utilization>0.01</peak_utilization>
+		<peak_events_per_year>2</peak_events_per_year>
+		<new_deployments>4</new_deployments>
+	</Row>
+	<Row>
+		<use_cases>Steady Growth</use_cases>
+		<average_peak_utilization>0.75</average_peak_utilization>
+		<average_base_utilization>0.2</average_base_utilization>
+		<peak_utilization>0.05</peak_utilization>
+		<peak_events_per_year>6</peak_events_per_year>
+		<new_deployments>12</new_deployments>
+	</Row>
+	<Row>
+		<use_cases>Unpredictable Growth</use_cases>
+		<average_peak_utilization>0.75</average_peak_utilization>
+		<average_base_utilization>0.15</average_base_utilization>
+		<peak_utilization>0.1</peak_utilization>
+		<peak_events_per_year>6</peak_events_per_year>
+		<new_deployments>24</new_deployments>
+	</Row>
+	<Row>
+		<use_cases>High Throughput</use_cases>
+		<average_peak_utilization>0.75</average_peak_utilization>
+		<average_base_utilization>0.1</average_base_utilization>
+		<peak_utilization>0.01</peak_utilization>
+		<peak_events_per_year>12</peak_events_per_year>
+		<new_deployments>4</new_deployments>
+	</Row>
+	<Row>
+		<use_cases>Predictable Burst</use_cases>
+		<average_peak_utilization>0.75</average_peak_utilization>
+		<average_base_utilization>0.2</average_base_utilization>
+		<peak_utilization>0.2</peak_utilization>
+		<peak_events_per_year>40</peak_events_per_year>
+		<new_deployments>4</new_deployments>
+	</Row>
+	<Row>
+		<use_cases>Unpredictable Burst</use_cases>
+		<average_peak_utilization>0.75</average_peak_utilization>
+		<average_base_utilization>0.15</average_base_utilization>
+		<peak_utilization>0.15</peak_utilization>
+		<peak_events_per_year>30</peak_events_per_year>
+		<new_deployments>4</new_deployments>
+	</Row>
+</Root>

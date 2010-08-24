@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Row>
+		<assumption>Annual cost per sys admin</assumption>
+		<on_site>105000</on_site>
+		<amazon>105000</amazon>
+		<rackspace>105000</rackspace>
+		<go_grid>105000</go_grid>
+	</Row>
+	<Row>
+		<assumption>Hourly cost per sys admin</assumption>
+		<on_site>50.4807692307692</on_site>
+		<amazon>50.4807692307692</amazon>
+		<rackspace>50.4807692307692</rackspace>
+		<go_grid>50.4807692307692</go_grid>
+	</Row>
+	<Row>
+		<assumption>Hours per new deployment</assumption>
+		<Units>Hours</Units>
+		<on_site>16</on_site>
+		<amazon>4</amazon>
+		<rackspace>4</rackspace>
+		<go_grid>4</go_grid>
+	</Row>
+	<Row>
+		<assumption>Hours per scaling event</assumption>
+		<Units>Hours</Units>
+		<on_site>10</on_site>
+		<amazon>1</amazon>
+		<rackspace>1</rackspace>
+		<go_grid>1</go_grid>
+	</Row>
+	<Row>
+		<assumption>Servers per FTE</assumption>
+		<on_site>50</on_site>
+		<amazon>400</amazon>
+		<rackspace>400</rackspace>
+		<go_grid>400</go_grid>
+	</Row>
+	<Row>
+		<assumption>Downtime percent per year</assumption>
+		<Units>%</Units>
+		<on_site>0.005</on_site>
+		<amazon>0.0005</amazon>
+		<rackspace>0.0005</rackspace>
+		<go_grid>0.0005</go_grid>
+	</Row>
+</Root>

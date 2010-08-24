@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ROI Calculator</title>
+    <link href="css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/base.css" media="screen" rel="stylesheet" type="text/css" />
+    <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.4.custom.css" rel="Stylesheet" />	
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.4.custom.min.js"></script>
+    <script src="calculator.js" type="text/javascript"></script> 
+  </head>
+
+  <body>
+    <form action="" method="post" name="form">
+      <div id="left-column">
+	<h2>How will you use the cloud?</h2>
+	<label for="company_name">Company name:</label> <input type="text" id="company_name" name="company_name" />
+	<label for="email">Email:</label> <input type="text" id="email" name="email" />
+	<h3>What service are you deploying to the cloud?</h3>
+	<select id="use">
+	  <option value="content_delivery" SELECTED>Content Delivery</option>
+	  <option value="web_application">Web Application</option>
+	  <option value="web_server">Web Server</option>
+	  <option value="collaboration_server">Collaboration Server</option>
+	  <option value="dev_test">Dev &amp; Test Server</option>
+	  <option value="grid_computing">Grid Computing </option>
+	</select>
+	<br />
+	<br />
+	<p id="slider_label">
+	  <label for="deployment_size">Deployment Size:</label> <input type="text" id="deployment_size" class="report_input" />
+	</p>
+
+	<div id="slider"></div>
+
+	<div id="peak-usage">
+	  <h3>What is the monthly peak usage?</h3>
+	  <div class="usage-input">
+	    <label for="compute_units">Compute Units</label> <input type="text" id="compute_units" name="compute_units" class="numeric" /> 
+	    <p>Virtualized 1.2Ghz core, 1.7GB, 160GB instance storage</p>
+	  </div>
+	  <div class="usage-input">
+	    <label for="data_storage">Data Storage</label> <input type="text" id="data_storage" name="data_storage" class="numeric" /> 
+	    <p>GB</p>
+	  </div>
+	  <div class="usage-input">
+	    <label for="mountable_data_storage">Mountable Data Storage</label> <input type="text" id="mountable_data_storage" name="mountable_data_storage" class="numeric" /> 
+	    <p>GB</p>
+	  </div>
+	  <div class="usage-input">
+	    <label for="bandwidth_inbound">Bandwidth Inbound</label> <input type="text" id="bandwidth_inbound" name="bandwidth_inbound" class="numeric" /> 
+	    <p>GB/month</p>
+	  </div>
+	  <div class="usage-input">
+	    <label for="bandwidth_outbound">Bandwidth Outbound</label> <input type="text" id="bandwidth_outbound" name="bandwidth_outbound" class="numeric" /> 
+	    <p>GB/month</p>
+	  </div>
+	  <div class="usage-input">
+	    <label for="load_balancers">Load Balancers</label> <input type="text" id="load_balancers" name="load_balancers" class="numeric" /> 
+	  </div>
+	  <div class="usage-input">
+	    <input id="reset_to_default" type="button" name="reset_to_default" value="Reset to Default" />
+	  </div>
+	</div>
+
+	<h3>What describes the demand for this service?</h3>
+	<select id="demand">
+	  <option value="constant_load" SELECTED>Constant Load</option>
+	  <option value="high_throughput">High Throughput</option>
+	  <option value="predictable_burst">Predictable Burst</option>
+	  <option value="unpredictable_burst">Unpredictable Burst</option>
+	</select>
+  
+	<h2>Describe your deployment</h2>
+	<h3>Which IaaS cloud are you considering?</h3>
+	<select id="cloud">
+	  <option value="amazon" SELECTED>Amazon</option>
+	  <option value="rackspace">Rackspace</option>
+	  <option value="go_grid">GoGrid</option>
+	</select>
+	<h3>Do you currently use a hypervisor? Which?</h3>
+	<select id="hypervisor">
+	  <option value="none" selected>None</option>
+	  <option value="vsphere_free">Vsphere Free</option>
+	  <option value="vsphere_essentials">Vsphere Essentials</option>
+	  <option value="vsphere_standard">Vsphere Standard</option>
+	  <option value="citrix_xen_free">Citrix Xen Free</option>
+	  <option value="citrix_xen_advanced">Citrix Xen Advanced</option>
+	  <option value="ms_hyper_v">MX Hyper-V</option>
+	  <option value="xen">Xen</option>
+	  <option value="kvm">KVM</option>
+	  <option value="other">Other</option>
+	</select>
+	<h3>Which OS will you use?</h3>
+	<select id="os">
+	  <option value="fedora" selected>Fedora</option>
+	  <option value="suse">SUSE</option>
+	  <option value="ubuntu">Ubuntu</option>
+	  <option value="centos">CentOS</option>
+	  <option value="debian">Debian</option>
+	  <option value="gentoo">Gentoo</option>
+	  <option value="other_linux">Other Linux</option>
+	  <option value="redhat_enterprise">Redhat Enterprise</option>
+	  <option value="windows_server">Windows Server</option>
+	</select>
+      </div>
+    </form>
+ 
+    <div class="report">
+	<h2>Why use cloud computing?</h2>
+	<h3>Utility Pricing</h3>
+	<p class="label">Pay for what you use:</p>
+	<p>Convert <span id="percent_of_servers">#</span>% of your servers to flexible, on-demand instances.</p>
+	<p class="label">Pay as you go:</p>
+	<p>Avoid <span id="hardware_cloud_cost_savings">#</span> in up-front costs.
+	<h3>Shared, flexible capacity</h3>
+	<p class="label">Server utilization:</p>
+	<p>Increase your server utilization from <span id="original_server_utilization">#</span>% to <span id="cloud_server_utilization">#</span>%.</p>
+	<h3>Datacenter optimization, scale, and reliability</h3>
+	<p class="label">Facility, hardware &amp; power cost:</p>
+	<p>Reduce your cost per compute hour from <span id="original_facility_cost">#</span> to <span id="cloud_facility_cost">#</span> in the cloud.</p>
+	<p class="label">Down-time:</p>
+	<p>Reduce down-time by <span id="server_downtime_hours">#</span> server-hours annually.</p>
+	<h2>Why use RightScale</h2>
+	<p>You can save <span id="annual_average_savings">#</span> per year on average using the cloud with RightScale.</p>
+	<h3>Agility</h3>
+	<p class="label">New deployment time</p>
+	<p>Launch new production deployments in <span id="deployment_time_percentage">#</span>% less time.</p>
+	<p class="label">Provisioning time:</p>
+	<p>Reduce provisioning time by <span id="provisioning_time">#</span> minutes.</p>
+	<p class="label">Admin resources:</p>
+	<p>Manage cloud infrastructure with <span id="admin_hours">#</span> fewer admin hours.</p>
+	<h3>Control</h3>
+	<p class="label">Cost transparency:</p>
+	<p>Know your monthly spend: <span id="monthly_computing_spend">#</span> for computing and <span id="monthly_storage_spend">#</span> for storage.</p>
+      
+    </div>
+  </body>
+</html>
