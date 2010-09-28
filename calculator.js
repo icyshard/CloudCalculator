@@ -582,6 +582,32 @@ function get_total_cloud_costs(){
 
 // Report functions ==========================================================
 
+function show_form() {
+	$("#calculator-header").text("Calculate Your Cloud Computing Cost Savings ");
+	$("#reset_to_default").show();
+	$("#form-bottom").show();
+	$("#calculator-report").hide();
+	$("#recalculate").hide();
+	$("#savings").hide();
+	$(".right-column-form").show();
+	$(".right-column-report").hide();
+	$("#calculator-banner-results").hide();
+	$("#calculator-banner").show()
+}
+
+function show_report() {
+	$("#calculator-header").text("Cost Benefits of Cloud Computing ");
+	$("#reset_to_default").hide();
+	$("#form-bottom").hide();
+	$("#calculator-report").show();
+	$("#recalculate").show();
+	$("#savings").show();
+	$(".right-column-form").hide();
+	$(".right-column-report").show();
+	$("#calculator-banner-results").show();
+	$("#calculator-banner").hide();
+}
+
 function format_percent(raw_number) {
     return Math.round(raw_number * 100);
 }
@@ -599,44 +625,23 @@ function formatCurrency(num) {
 	for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)
 	num = num.substring(0,num.length-(4*i+3))+','+
 	num.substring(num.length-(4*i+3));
-	return (((sign)?'':'-') + '$' + num + '.' + cents);
+	return (((sign)?'':'-') + '$' + num);
 }
 
-function FormatNumberBy3(num, decpoint, sep) {
-  // check for missing parameters and use defaults if so
-  if (arguments.length == 2) {
-    sep = ",";
-  }
-  if (arguments.length == 1) {
-    sep = ",";
-    decpoint = ".";
-  }
-  // need a string for operations
-  num = num.toString();
-  // separate the whole number and the fraction if possible
-  a = num.split(decpoint);
-  x = a[0]; // decimal
-  y = a[1]; // fraction
-  z = "";
-
-
-  if (typeof(x) != "undefined") {
-    // reverse the digits. regexp works from left to right.
-    for (i=x.length-1;i>=0;i--)
-      z += x.charAt(i);
-    // add seperators. but undo the trailing one, if there
-    z = z.replace(/(\d{3})/g, "$1" + sep);
-    if (z.slice(-sep.length) == sep)
-      z = z.slice(0, -sep.length);
-    x = "";
-    // reverse again to get back the number
-    for (i=z.length-1;i>=0;i--)
-      x += z.charAt(i);
-    // add the fraction back in, if it was there
-    if (typeof(y) != "undefined" && y.length > 0)
-      x += decpoint + y;
-  }
-  return x;
+function formatCurrencyCents(num) {
+num = num.toString().replace(/\$|\,/g,'');
+if(isNaN(num))
+num = "0";
+sign = (num == (num = Math.abs(num)));
+num = Math.floor(num*100+0.50000000001);
+cents = num%100;
+num = Math.floor(num/100).toString();
+if(cents<10)
+cents = "0" + cents;
+for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)
+num = num.substring(0,num.length-(4*i+3))+','+
+num.substring(num.length-(4*i+3));
+return (((sign)?'':'-') + '$' + num + '.' + cents);
 }
 
 
@@ -677,7 +682,7 @@ function calculate_original_facility_cost() {
 	var server_power = get_server_power() * 5;
     var compute_hours = get_compute_hours();
     var result = (up_front_datacenter_total + on_site_os_cost + virtualization + replacement_cycle_total + hardware_maintenance + datacenter_power + server_power) / (compute_hours * 5);
-	return formatCurrency(result);
+	return formatCurrencyCents(result);
 }
 function calculate_cloud_facility_cost() {
     var reserved_server = get_reserved_server() * 5;
@@ -686,7 +691,7 @@ function calculate_cloud_facility_cost() {
 	var annual_cloud_os_cost = get_annual_cloud_os_cost() * 5;
     var compute_hours = get_compute_hours();
     var result = Math.round(((reserved_server + on_demand_server + up_front_cloud_os_cost + annual_cloud_os_cost) / (compute_hours * 5)) * 100)/100;
-    return formatCurrency(result);
+    return formatCurrencyCents(result);
 }
 function calculate_server_downtime_hours() {
     var data = global_data["admin_data"];
@@ -941,7 +946,11 @@ function bind_events () {
     });
 
     $('#reset_to_default').click(reset_to_default);
+	$('#submit').click(show_report);
+	$('#recalculate').click(show_form);
+
 }
+
 
 
 //===init=============================================================
@@ -961,7 +970,7 @@ function init(){
     $.get("data/use_data_table.xml", {}, use_data_load, "xml");
     $.get("data/virtualization_pricing_data_table.xml", {}, virtualization_pricing_data_load, "xml");
     $.get("data/use_case_data_table.xml", {}, use_case_data_load, "xml");
-
+	show_form();
 }
 
 $(document).ready(init)

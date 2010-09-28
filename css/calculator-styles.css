@@ -1,0 +1,292 @@
+#mainOneColumn {overflow: hidden; margin: 0 0 10px 0;}
+#mainOneColumn #breadcrumb ul {width: 1001px;}
+#calculator-banner, #calculator-banner-results {
+	margin-top: -15px; 
+	background: url(/images/roi-calculator-banner.jpg) no-repeat top left;
+	width: 998px;
+	height: 161px;
+	text-indent: -9999px;
+	}
+	
+#calculator-banner-results {
+		background: url(/images/roi-calculator-banner-results.jpg) no-repeat top left;
+}
+
+body {
+    background: none;
+}
+
+#left-column-wrap {
+	float: left;
+}
+
+#left-column-bottom {
+	width: 580px;
+	background: url(/images/roi-calculator-left-column-bottom.png) no-repeat bottom left;
+	margin-left: 43px;
+	margin-top: -70px;
+	padding-bottom: 13px;
+}
+
+#left-column-top {
+	padding-top: 60px;
+	background: url(/images/roi-calculator-left-column-top.png) no-repeat top left;
+	position: relative;
+}
+
+#left-column-middle {
+	background: url(/images/roi-calculator-left-column-middle.png) repeat-y top left;
+	overflow: hidden;
+	margin-top: -4px;
+	padding-top: 10px;
+}
+
+#calculator-header {
+	color: #13396b;
+	font-size: 2.04em;
+	font-weight: 600;
+	position: absolute;
+	top: 5px;
+	left: 20px;
+}
+
+#reset_to_default {
+	width: 74px;
+	height: 34px;
+	background: url(/images/roi-calculator-reset.png) no-repeat top left;
+	border: 0;
+	position: absolute;
+	right: 17px;
+	top: 13px;
+	cursor: pointer;
+}
+
+#form-bottom {
+    float: left;
+    width: 559px;
+	background: url(/images/roi-calculator-bottom.gif) no-repeat bottom left;
+    overflow: hidden;
+	margin-left: 10px;
+	padding-bottom: 9px;
+}
+#form-top {
+	background: url(/images/roi-calculator-top.gif) no-repeat top left;
+	padding-top: 1px;
+	
+}
+
+form#calculator {
+	background: #f1f4f9;
+	width: 538px;
+	margin-top: 5px;
+	padding:1px 10px 10px 10px;
+	overflow: hidden;
+	}
+
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+	clear: left;
+}
+
+h3 {
+    font-size: 1.3em;
+    clear: left;
+    margin-top: 15px;
+	margin-bottom: 15px;
+	color: #13386b;
+}
+
+label {
+    float: left;
+    width: 125px;
+    clear: left;
+}
+
+
+
+.service-deployment {
+    width: 230px;
+	float: left;
+	margin-left: 10px !important;
+}
+
+.drop-downs {
+	float: left;
+	margin-left: 10px;
+	width: 257px;
+}
+
+.drop-downs select {
+	width: 240px;
+	}
+
+#use {width: 240px;}
+
+input.numeric {
+    text-align: right;
+	width: 70px;
+	float: left;
+}
+.usage-input {
+    width: 262px;
+	height: 40px;
+	float: left;
+	background: #fafbfd;
+	margin-right: 5px;
+	margin-top: 5px;
+	padding-top: 20px;
+	padding-left: 5px;
+
+}
+
+.two-lines {
+	padding-top: 10px;
+	height: 50px;
+}
+
+.usage-input label {
+	color: #13386b;
+	font-size: 1.3em;
+	margin-top: 5px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+.usage-input p {
+    float: left;
+    width: 230px;
+    font-size: 1.0em;
+	margin: 5px 0 0 20px;
+}
+
+.usage-input p.short {
+    float: left;
+    width: 20px;
+    font-size: 1.3em;
+	margin-left: 5px;
+}
+
+#slider-wrap {
+	float: left; 
+	margin-left: 25px;
+	width: 235px !important;
+}
+
+#slider {
+    width: 170px; 
+	margin-left: 8px;
+ 	margin-top: 3px;
+    margin-bottom: 10px;
+	float: left;
+}
+
+.calculator-help {
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+
+input.report_input {
+    border: 0; 
+	background: url(/images/roi-calculator-deployment-size.gif) no-repeat top left;
+    color: #464646;
+ 	font-size: 1.4em;
+    font-weight: bold;
+    display: inline;
+    width: 26px;
+	height: 32px;
+	float: left;
+	margin-top: -10px;
+	margin-left: 20px;
+	padding-right: 7px;
+	text-align: right;
+}
+
+#peak-usage {
+	overflow: hidden;
+	float: left;
+	width: 548px;
+}
+
+#peak-usage h3 {
+	margin-left: 10px;
+}
+
+#submit {
+	margin-top: 20px;
+	margin-left: 150px;
+}
+
+#right-column {
+	width: 304px;
+	float: left;
+	margin-top: -15px;
+	margin-left: 38px;
+	overflow: hidden;
+}
+
+#right-column h2 {
+	color: #13396b;
+	font-size: 1.6em;
+	margin-bottom: -5px;
+}
+
+.report {
+	float: left;
+	width: 480px;
+	margin-left: 7px;
+}
+
+.report p {
+	margin: 0 0 10px 15px;
+}
+
+.report p.label {
+	margin-right: 10px;
+	clear: left;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.report span {
+	color: #ff6406;
+	font-weight: bold;
+}
+
+#annual_average_savings {
+	color: #ff6406;
+}
+
+.report h3 {
+	background: url(/images/roi-calculator-results-header.gif) no-repeat top left;
+	width: 562px;
+	height: 33px;
+	padding-left: 15px;
+	padding-top: 10px;
+	font-size: 1.3em;
+	margin: 0;
+}
+
+.override {
+    color: orange;
+    font-weight: bold;
+}
+
+#recalculate {
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+#savings {
+	background: url(/images/roi-calculator-results-highlight.gif) no-repeat top left;
+	width: 549px;
+	height: 32px;
+	font-size: 1.7em;
+	padding-top: 10px;
+	padding-left: 15px;
+	margin-left: 5px;
+	margin-top: 0;
+	text-align: center;
+}
