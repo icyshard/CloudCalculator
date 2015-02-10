@@ -1,6 +1,3 @@
-<?php include("../includes/set_cookie.php"); ?>
-<?php $thisSection="Resources"; ?>
-<?php $thisPage="Calculator"; ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -8,8 +5,8 @@
 	<meta name="description" content="Use the RightScale Cloud Computing ROI Calculator to see how much you’ll save using the cloud with the RightScale Cloud Management Platform" /> <meta name="keywords" content="Cloud Computing, Cloud Computing ROI, Cloud Computing Return On Investment, RightScale ROI Calculator, RightScale Cloud Management Platform" /> 
 	<meta name="keywords" content="" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="/stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
-	<link href="/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="css/calculator-styles.css" media="screen" rel="stylesheet" type="text/css" />
 	<!--[if lte IE 7]><link href="/stylesheets/ie.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
     	<!--[if lte IE 8]><link href="/stylesheets/ie8.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
@@ -27,7 +24,7 @@
 
 <body id="productPricing" class="oneColumn">
 <div id="container">
-	<?php include("../includes/navigation.php"); ?>
+	<?php include("includes/navigation.php"); ?>
 	<div id="masthead">
 		<h1>Cloud Computing ROI Calculator</h1>
 	</div><!-- //End Masthead -->
@@ -54,7 +51,7 @@
 				<div id="form-top">
 					<form action="" method="post" name="form" id="calculator">
 					<div class="service-deployment drop-downs">
-					<h3>Service you are deploying? <img src="/images/roi-calculator-help.png" alt="" class="calculator-help" /></h3>
+					<h3>Service you are deploying? <img src="images/roi-calculator-help.png" alt="" class="calculator-help" /></h3>
 					<select id="use">
 					  <option value="content_delivery" SELECTED>Content Delivery</option>
 					  <option value="web_application">Web Application</option>
@@ -65,13 +62,13 @@
 					</select>
 					</div>
 					<div id="slider-wrap" class="drop-downs">
-					  <h3 id="slider_label">Size of Deployment? <img src="/images/roi-calculator-help.png" alt="" class="calculator-help" /></h3> 
+					  <h3 id="slider_label">Size of Deployment? <img src="images/roi-calculator-help.png" alt="" class="calculator-help" /></h3> 
 					<div id="slider"></div>
 					<input type="text" id="deployment_size" class="report_input" />
 					</div>
 
 					<div id="peak-usage">
-					  <h3>Monthly peak usage? <img src="/images/roi-calculator-help.png" alt="" class="calculator-help" /></h3>
+					  <h3>Monthly peak usage? <img src="images/roi-calculator-help.png" alt="" class="calculator-help" /></h3>
 					  <div class="usage-input two-lines">
 					    <label for="compute_units">Compute Units</label> <input type="text" id="compute_units" name="compute_units" class="numeric" /> 
 					    <p>Virtualized 1.2Ghz core, 1.7GB, 160GB storage</p>
@@ -97,7 +94,7 @@
 					  </div>
 					</div>
 					<div class="drop-downs">
-					<h3>Demand for service? <img src="/images/roi-calculator-help.png" alt="" class="calculator-help" /></h3>
+					<h3>Demand for service? <img src="images/roi-calculator-help.png" alt="" class="calculator-help" /></h3>
 					<select id="demand">
 					  <option value="constant_load" SELECTED>Constant Load</option>
 					  <option value="high_throughput">High Throughput</option>
@@ -106,7 +103,7 @@
 					</select>
 					</div>
 					<div class="drop-downs">
-					<h3>IaaS cloud you are considering? <img src="/images/roi-calculator-help.png" alt="" class="calculator-help" /></h3>
+					<h3>IaaS cloud you are considering? <img src="images/roi-calculator-help.png" alt="" class="calculator-help" /></h3>
 					<select id="cloud">
 					  <option value="amazon" SELECTED>Amazon</option>
 					  <option value="rackspace">Rackspace</option>
@@ -114,7 +111,7 @@
 					</select>
 					</div>
 					<div class="drop-downs">
-					<h3>Hypervisor you are using? <img src="/images/roi-calculator-help.png" alt="" class="calculator-help" /></h3>
+					<h3>Hypervisor you are using? <img src="images/roi-calculator-help.png" alt="" class="calculator-help" /></h3>
 					<select id="hypervisor">
 					  <option value="none" selected>None</option>
 					  <option value="vsphere_free">VSphere Free</option>
@@ -129,7 +126,7 @@
 					</select>
 					</div>
 					<div class="drop-downs">
-					<h3>OS you will use? <img src="/images/roi-calculator-help.png" alt="" class="calculator-help" /></h3>
+					<h3>OS you will use? <img src="images/roi-calculator-help.png" alt="" class="calculator-help" /></h3>
 					<select id="os">
 					  <option value="fedora" selected>Fedora</option>
 					  <option value="suse">SUSE</option>
@@ -142,7 +139,7 @@
 					  <option value="windows_server">Windows Server</option>
 					</select>
 					</div>
-					<img src="/images/roi-calculate-results.gif" id="submit" alt="" />
+					<img src="images/roi-calculate-results.gif" id="submit" alt="" />
 				    </form>
 				</div>
 				</div>
@@ -177,7 +174,7 @@
 				</div>
 				</div>
 				<!-- End Left Column -->
-						<img src="/images/roi-calculator-recalculate.gif" alt="" id="recalculate" class="js-hide" />
+						<img src="images/roi-calculator-recalculate.gif" alt="" id="recalculate" class="js-hide" />
 						</div>
 				<div id="right-column" class="right-column-form">
 					<h2>Why Use RightScale?</h2>
@@ -199,7 +196,7 @@
 
 						<p>For more details on the time and cost savings you’ll achieve with RightScale, download our <a href="/info_center/white-papers/quantifying-the-benefits-of-rightscale.php">Quantifying the Benefits of the RightScale Cloud Management Platform white paper</a>.
 						</p>
-						<p><a href="/info_center/white-papers/quantifying-the-benefits-of-rightscale.php"><img src="/images/download-white-paper.gif" alt="" /></a></p>
+						<p><a href="/info_center/white-papers/quantifying-the-benefits-of-rightscale.php"><img src="images/download-white-paper.gif" alt="" /></a></p>
 
 						</div>
 						<!-- End Right Column -->
@@ -209,4 +206,4 @@
 						                 });
 						         </script>
 					</div>
-							<?php include("../includes/footer.php"); ?>
+							<?php include("includes/footer.php"); ?>
